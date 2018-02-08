@@ -22,8 +22,8 @@ public class SampleTest {
     @BeforeClass
     public void setUp() throws MalformedURLException {
         caps = new DesiredCapabilities();
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "android");
-        caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "6.0");
+        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
+        // caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "6.0");
         caps.setCapability(MobileCapabilityType.APP,
                 System.getProperty("user.dir") + "/AndroidCalculator.apk");
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
